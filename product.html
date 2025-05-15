@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettagli Prodotto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Il Mio Negozio</h1>
+    </header>
+    <main>
+        <div class="product-details-container">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img id="main-image" class="main-image" src="" alt="Immagine Prodotto">
+                </div>
+                <div class="thumbnails"></div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Caricamento...</h1>
+                <p class="product-description"></p>
+                <div class="product-price"></div>
+                <p class="product-stock"></p>
+                
+                <div class="quantity-control">
+                    <button id="decrement" class="quantity-button">-</button>
+                    <input id="quantity" class="quantity-display" type="number" value="1" min="1">
+                    <button id="increment" class="quantity-button">+</button>
+                </div>
+                
+                <div class="button-group">
+                    <button id="add-to-cart" class="button-add-cart">Aggiungi al carrello</button>
+                    <button id="buy-now" class="button-buy-now">Acquista ora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Il Mio E-commerce</p>
+    </footer>
+    
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <img id="fullscreen-image" class="fullscreen-image" src="" alt="Immagine Fullscreen">
+        </div>
+    </div>
+    
+    <script src="product.js" defer></script>
+</body>
+</html>
